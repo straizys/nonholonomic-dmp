@@ -1,6 +1,8 @@
 # Non-holonomic DMPs using the Udwadia-Kalaba method
 
-Cartesian space DMPs with an analytically-derived coupling term that imposes non-holonomic equality constraints. Below is an example of learning scalpel cutting skills from demonstrations. The rollouts of Nonholonomic DMPs (semi-transparent blade) are guaranteed to satisfy the non-holonomic constraints, even when trained on demonstrations with constraint violations (opaque blade). 
+Cartesian space DMPs with an analytically-derived coupling term that imposes non-holonomic equality constraints. More details can be found in our paper: [https://arxiv.org/abs/2209.12039](https://arxiv.org/abs/2209.12039) 
+
+Below is an example of learning scalpel cutting skills from demonstrations. The rollouts of Nonholonomic DMPs (semi-transparent blade) are guaranteed to satisfy the non-holonomic constraints, even when trained on demonstrations with constraint violations (opaque blade). 
 
 <div style="width: 100%; overflow: hidden;">
   <img src="https://github.com/straizys/nonholonomic-dmp/blob/main/top_8.gif" width="250" height="250"/>
