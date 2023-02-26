@@ -103,12 +103,12 @@ def objective_function(x, xyz, dxyz, ddxyz, q, w, dw, dt):
     # Evaluate the constraint forces
     f_con = nonholonomic_constraint_force(q_unc,dxyz_unc,w_opt,ddxyz)
 
-    # Evaluate SO(3) distance between original and current orientation 
-    Rotmat_unc = R.from_quat(q_unc).as_matrix()
-    Rotmat_opt = R.from_quat(q_opt).as_matrix()
-    so3_distance = np.linalg.norm(Rotmat_unc - Rotmat_opt,'fro')
+    # # Evaluate SO(3) distance between original and current orientation 
+    # Rotmat_unc = R.from_quat(q_unc).as_matrix()
+    # Rotmat_opt = R.from_quat(q_opt).as_matrix()
+    # so3_distance = np.linalg.norm(Rotmat_unc - Rotmat_opt,'fro')
 
-    return np.sum(f_con**2) + so3_distance**2
+    return np.sum(f_con**2) #+ so3_distance**2
 
 # Plot rollout
 def plot_rollout(xyz_traj, q_traj, constraint, label=None):
